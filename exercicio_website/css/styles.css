@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+/*RESET*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: Verdana, Geneva, Thoma, sans-serif;
+}
+
+/* Trick */
+body { 
+	height:100vh;
+	display:flex; 
+	flex-direction:column; 
+}
+
+header {
+	min-height:50px;
+	/*Fica o menu do lado do logo - modo default rows*/
+	display: flex;
+	padding:20px;
+	/*espaço entre o logo e o menu*/	
+	justify-content:space-between;
+
+	/*logo fica alinhado com o menu*/
+	align-items: center;
+		min-height:50px;
+	background: #d5f4e6;	
+}
+
+img {
+	width: 150px;
+}
+
+footer {
+	min-height:50px;
+	margin-top:auto; 
+	color: green;
+	background: #d5f4e6;
+	text-align: center;
+}
+
+
+ul,li {
+		
+		list-style: none;
+		font-size: 1.2rem;	
+		
+}
+ 
+a {
+	text-decoration: none;
+	color: green;
+}
+
+nav {
+	display: flex;
+}
+
+h1 {
+	font-family:  'Parisienne', cursive;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.menu {
+	display: flex;
+}
+
+
+.menu li {
+	margin-left:20px;
+}
+
+.menu li a {
+
+	padding: 5 px;
+	
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;/*tamanho máximo da seção*/
+	margin: 0 auto; /*centraliza na margem automaticamente*/
+}
+
+/*significa filho-direto do elemento. Seleciona todos os filhos-diretos do elemento.*/
+.flex > div{
+	/*flex-grow, flex-shrink, and flex-basis*/
+	flex: 1 1 200px;
+	margin: 10px;
+
+}
